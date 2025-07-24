@@ -1,3 +1,4 @@
+
 import asyncio
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
 
@@ -12,8 +13,10 @@ async def main():
     # 這樣可以讓爬蟲等待瀏覽器載入頁面，並且可以在瀏覽器中看到爬蟲的操作，方便除錯
     run_config = CrawlerRunConfig(
         wait_for_images=True,  # 等待圖片載入
-        scan_full_page=True,  # Tells the crawler to try scrolling the entire page
-        scroll_delay=0.5,     # Delay (seconds) between scroll steps
+        scan_full_page=True,  # 掃描整個頁面
+        scroll_delay=0.5,     # 滾動步驟之間的延遲（秒)
+        #想要在`class="my-drawer-toggle-btn"`的元素上點擊
+        #js_code=["document.querySelector('.my-drawer-toggle-btn').click();"],
         cache_mode=CacheMode.BYPASS,
         verbose=True
     )
@@ -25,4 +28,6 @@ async def main():
 
 if __name__ == '__main__':
     asyncio.run(main())
+    
+
     
