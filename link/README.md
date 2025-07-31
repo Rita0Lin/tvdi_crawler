@@ -41,3 +41,9 @@ https://youtube.com/live/UV443rSHz7Q
 
 ## 2025_07_29_下午
 https://www.youtube.com/watch?v=MMUqem-gtbg
+
+## 2025_07_31_早上
+https://www.youtube.com/watch?v=o_nqYRFmjK4
+
+## 2025_07_31_下午
+https://meet.google.com/rvq-smie-nnp
